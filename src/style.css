@@ -20,13 +20,12 @@ h3 {
   font-size: 22px;
 }
 
-.container {
+.weather-container {
   border: 2px solid transparent;
   border-radius: 10px;
   box-shadow: 0 2px 2px 0 rgb(0 0 0 / 16%), 0 0 0 1px rgb(0 0 0 / 8%);
   margin: 20px 10px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 20px 30px;
   background: #eaf6f6;
 }
 
@@ -55,4 +54,8 @@ button {
 .precipitation {
   font-size: 18px;
   color: grey;
+}
+
+.about {
+  font-size: 12px;
 }

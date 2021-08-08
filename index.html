@@ -25,94 +25,104 @@
 
   <body>
     <div class="container">
-      <form class="city-form" id="city-form">
+      <div class="weather-container">
+        <form class="city-form" id="city-form">
+          <div class="row">
+            <div class="col">
+              <input
+                type="text"
+                placeholder="Change City"
+                autofocus="off"
+                autocomplete="off"
+                id="change-city"
+              />
+            </div>
+            <div class="col">
+              <input type="submit" value="Enter" class="enter-btn" />
+            </div>
+            <div class="col">
+              <button
+                class="btn btn-success w-100"
+                id="current-location-button"
+              >
+                Current
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <br />
+
+        <h1 id="city">City</h1>
+
+        <h2 id="date"></h2>
+        <h3>
+          <div class="convert">
+            <span class="temperature" id="temperature">28</span>
+            <span class="units">
+              <a href="#" id="celsius-link">°C</a> |
+              <a href="#" id="fahrenheit-link">°F</a>
+            </span>
+          </div>
+        </h3>
         <div class="row">
           <div class="col">
-            <input
-              type="text"
-              placeholder="Change City"
-              autofocus="off"
-              autocomplete="off"
-              id="change-city"
-            />
+            <i class="fas fa-cloud-sun forecast"></i>
+            <br />
+            <span id="daily-weather"></span>
           </div>
           <div class="col">
-            <input type="submit" value="Enter" class="enter-btn" />
+            Humidity: <span id="humidity"></span>%
+            <br />
+            Wind: <span id="wind"></span> km/h
+          </div>
+        </div>
+
+        <br />
+
+        <div class="row">
+          <div class="col">
+            25°C
+            <br />
+            Monday
+            <br />
+            <i class="fas fa-cloud-showers-heavy precipitation"></i> 20%
           </div>
           <div class="col">
-            <button class="btn btn-success w-100" id="current-location-button">
-              Current
-            </button>
+            26°C
+            <br />
+            Tuesday
+            <br />
+            <i class="fas fa-cloud-showers-heavy precipitation"></i> 0%
+          </div>
+          <div class="col">
+            28°C
+            <br />
+            Wednesday
+            <br />
+            <i class="fas fa-cloud-showers-heavy precipitation"></i> 50%
+          </div>
+          <div class="col">
+            25°C
+            <br />
+            Thursday
+            <br />
+            <i class="fas fa-cloud-showers-heavy precipitation"></i> 80%
+          </div>
+          <div class="col">
+            30°C
+            <br />
+            Friday
+            <br />
+            <i class="fas fa-cloud-showers-heavy precipitation"></i> 0%
           </div>
         </div>
-      </form>
-
-      <br />
-
-      <h1 id="city">City</h1>
-
-      <h2 id="date"></h2>
-      <h3>
-        <div class="convert">
-          <span class="temperature" id="temperature">28</span>
-          <span class="units">
-            <a href="#" id="celsius-link">°C</a> |
-            <a href="#" id="fahrenheit-link">°F</a>
-          </span>
-        </div>
-      </h3>
-      <div class="row">
-        <div class="col">
-          <i class="fas fa-cloud-sun forecast"></i>
-          <br />
-          <span id="daily-weather"></span>
-        </div>
-        <div class="col">
-          Humidity: <span id="humidity"></span>%
-          <br />
-          Wind: <span id="wind"></span> km/h
-        </div>
       </div>
-
-      <br />
-
-      <div class="row">
-        <div class="col">
-          25°C
-          <br />
-          Monday
-          <br />
-          <i class="fas fa-cloud-showers-heavy precipitation"></i> 20%
-        </div>
-        <div class="col">
-          26°C
-          <br />
-          Tuesday
-          <br />
-          <i class="fas fa-cloud-showers-heavy precipitation"></i> 0%
-        </div>
-        <div class="col">
-          28°C
-          <br />
-          Wednesday
-          <br />
-          <i class="fas fa-cloud-showers-heavy precipitation"></i> 50%
-        </div>
-        <div class="col">
-          25°C
-          <br />
-          Thursday
-          <br />
-          <i class="fas fa-cloud-showers-heavy precipitation"></i> 80%
-        </div>
-        <div class="col">
-          30°C
-          <br />
-          Friday
-          <br />
-          <i class="fas fa-cloud-showers-heavy precipitation"></i> 0%
-        </div>
-      </div>
+      <p class="about">
+        <a href="https://github.com/brittanystrocel/weather-app" target="_blank"
+          >Open-source code</a
+        >, by Brittany Strocel
+      </p>
     </div>
 
     <script src="src/script.js"></script>
