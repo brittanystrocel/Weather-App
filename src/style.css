@@ -14,10 +14,16 @@ h1 {
 h2 {
   font-size: 24px;
   font-weight: 400;
+  line-height: 10px;
+  padding-bottom: 15px;
 }
 
-h3 {
-  font-size: 22px;
+a {
+  text-decoration: none;
+}
+
+button {
+  border-radius: 10px;
 }
 
 .weather-container {
@@ -29,10 +35,6 @@ h3 {
   background: #eaf6f6;
 }
 
-a {
-  text-decoration: none;
-}
-
 .enter-btn {
   background: #fff;
   border-radius: 10px;
@@ -42,13 +44,9 @@ a {
   width: 100%;
 }
 
-button {
-  border-radius: 10px;
-}
-
-.forecast {
-  font-size: 34px;
-  color: grey;
+.temperature {
+  font-size: 38px;
+  font-weight: 600;
 }
 
 .precipitation {
