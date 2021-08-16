@@ -56,29 +56,26 @@
         <h1 id="city">City</h1>
 
         <h2 id="date"></h2>
-        <h3>
-          <div class="convert">
-            <span class="temperature" id="temperature">28</span>
-            <span class="units">
-              <a href="#" id="celsius-link">°C</a> |
-              <a href="#" id="fahrenheit-link">°F</a>
-            </span>
-          </div>
-        </h3>
+
         <div class="row">
           <div class="col">
-            <i class="fas fa-cloud-sun forecast"></i>
-            <br />
-            <span id="daily-weather"></span>
+            <div class="clearfix weather-temperature">
+              <img src="" id="icon" class="float-left" />
+              <strong class="temperature" id="temperature"></strong>
+              <span class="units">
+                <a href="#" id="celsius-link">°C</a> |
+                <a href="#" id="fahrenheit-link">°F</a>
+              </span>
+            </div>
           </div>
           <div class="col">
+            <span id="currently"></span>
+            <br />
             Humidity: <span id="humidity"></span>%
             <br />
             Wind: <span id="wind"></span> km/h
           </div>
         </div>
-
-        <br />
 
         <div class="row">
           <div class="col">
